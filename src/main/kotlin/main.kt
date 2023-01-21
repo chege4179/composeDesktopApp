@@ -18,7 +18,18 @@ fun main() = Window {
     var textfield by remember { mutableStateOf("") }
 
     MaterialTheme {
+        Column  (
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
 
+            Button(onClick = {
+
+            }){
+                Text(text = "Hello World")
+            }
+        }
 
     }
 }
